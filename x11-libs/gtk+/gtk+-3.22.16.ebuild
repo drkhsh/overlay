@@ -157,6 +157,7 @@ multilib_src_configure() {
 		$(use_enable X xkb) \
 		$(use_enable X xrandr) \
 		$(use_enable xinerama) \
+		$(use_with atk-bridge) \
 		--disable-papi \
 		--disable-mir-backend \
 		--enable-man \
