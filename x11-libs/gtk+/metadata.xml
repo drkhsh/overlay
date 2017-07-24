@@ -9,7 +9,8 @@
 		GTK+ is a multi-platform toolkit for creating graphical user
 		interfaces. Offering a complete set of widgets, GTK+ is suitable
 		for projects ranging from small one-off projects to complete
-		application suites.
+		application suites. This package allows building without ATK-Bridge and
+		thus also dbus.
 	</longdescription>
 	<use>
 		<flag name="atk-bridge">Enable the ATK-Bridge (depends on
@@ -19,7 +20,4 @@
 		<flag name="colord">Use <pkg>x11-misc/colord</pkg> for color management
 			in printing</flag>
 	</use>
-	<upstream>
-		<remote-id type="cpe">cpe:/a:gtk:gtk%2B</remote-id>
-	</upstream>
 </pkgmetadata>
