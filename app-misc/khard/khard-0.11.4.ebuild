@@ -28,7 +28,7 @@ SLOT="0"
 IUSE="zsh-completion"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-RDEPEND="=dev-python/vobject-0.9.2[${PYTHON_USEDEP}]
+RDEPEND="dev-python/vobject[${PYTHON_USEDEP}]
 	dev-python/configobj[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/atomicwrites[${PYTHON_USEDEP}]
