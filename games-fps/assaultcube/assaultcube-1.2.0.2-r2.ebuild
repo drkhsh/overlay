@@ -33,7 +33,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S=${WORKDIR}/${PV}
+S=${WORKDIR}/${PV}/AssaultCube_v1.2.0.2.source/source
 
 src_prepare() {
 	# check pach
