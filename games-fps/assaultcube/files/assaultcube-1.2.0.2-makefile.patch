@@ -20,7 +20,7 @@
 +INCLUDES= -I. -Ibot
 +
 +BUNDLED_ENET ?= YES
-+ifew ($(BUNDLED_ENET),YES)
++ifeq ($(BUNDLED_ENET),YES)
 +INCLUDES += -I../enet/include
 +else
 +INCLUDES += $(shell $(PKG_CONFIG) --cflags libenet)
