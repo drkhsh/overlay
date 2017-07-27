@@ -54,7 +54,7 @@
 +		 $(shell $(PKG_CONFIG) --cflags openal) \
 +		 $(shell $(PKG_CONFIG) --cflags vorbisfile) \
 +		 $(shell $(PKG_CONFIG) --cflags x11) \
-+		 $(shell $(PKG_CONFIG) --cflags curl)
++		 $(shell $(PKG_CONFIG) --cflags libcurl)
 +
 +ifneq ($(BUNDLED_ENET),YES)
 +CLIENT_INCLUDES += $(shell $(PKG_CONFIG) --cflags libenet)
@@ -68,7 +68,7 @@
 +	     $(shell $(PKG_CONFIG) --libs openal) \
 +	     $(shell $(PKG_CONFIG) --libs vorbisfile) \
 +	     $(shell $(PKG_CONFIG) --libs x11) \
-+		 $(shell $(PKG_CONFIG) --cflags curl)
++		 $(shell $(PKG_CONFIG) --cflags libcurl)
 +
 +ifeq ($(BUNDLED_ENET),YES)
 +CLIENT_LIBS += -L../enet/.libs -lenet
