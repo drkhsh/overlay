@@ -33,7 +33,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S=${WORKDIR}/AssaultCube_v${PV}/source
+S=${WORKDIR}/AssaultCube_v${PV}
 
 src_prepare() {
 	# patch makefile

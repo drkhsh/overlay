@@ -1,5 +1,5 @@
---- AssaultCube_v1.2.0.2.source/source/src/Makefile	2013-11-10 00:12:11.000000000 +0100
-+++ Makefile	2017-07-27 18:58:05.700446705 +0200
+--- source/src/Makefile	2013-11-10 00:12:11.000000000 +0100
++++ source/src/Makefile	2017-07-27 18:58:05.700446705 +0200
 @@ -1,29 +1,64 @@
 -CXXFLAGS= -O3 -fomit-frame-pointer
 -CXX=clang++	# Use clang++, as g++ optimizations cause crashes...
