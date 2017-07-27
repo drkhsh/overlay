@@ -9,7 +9,7 @@ inherit eutils games
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
-SRC_URI="mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}.source.tar.bz2"
+SRC_URI="https://github.com/assaultcube/AC/releases/download/v1.2.0.2/AssaultCube_v1.2.0.2.tar.bz2"
 
 LICENSE="ZLIB"
 SLOT="0"
@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="dedicated doc server"
 
 RDEPEND="
-	>=net-libs/enet-1.3.0:1.3
+	net-libs/enet
 	sys-libs/zlib
 	net-misc/curl
 	!dedicated? (
@@ -33,13 +33,17 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S=${WORKDIR}/AssaultCube_v${PV}.source/source
+S=${WORKDIR}/AssaultCube_v${PV}/source
 
 src_prepare() {
 	# patch makefile
 	epatch "${FILESDIR}"/${PN}-${PV}-makefile.patch
 
-	# respect FHS and fix binary name
+	# remove unsued stuff
+	rm -r bin_unix/* || die
+	find packages -name *.txt -delete || die
+
+	# respect fhs and fix binary name
 	sed -i \
 		-e "/^CUBE_DIR=/d ; 2iCUBE_DIR=$(games_get_libdir)/${PN}" \
 		-e "s:bin_unix/\${SYSTEM_NAME}\${MACHINE_NAME}:ac_:" \
