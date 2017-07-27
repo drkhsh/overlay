@@ -4,14 +4,13 @@
 
 EAPI=5
 
-inherit eutils gnome2-utils games
+inherit eutils games
 
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
 SRC_URI="mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}.tar.bz2
-	mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}_source.tar.bz2
-	http://dev.gentoo.org/~hasufell/distfiles/${PN}.png"
+	mirror://sourceforge/actiongame/AssaultCube%20Version%20${PV}/${MY_PN}_v${PV}_source.tar.bz2"
 
 LICENSE="ZLIB"
 SLOT="0"
@@ -78,8 +77,6 @@ src_install() {
 		make_desktop_entry ${PN}-server "${MY_PN} Server" ${PN}
 	fi
 
-	doicon -s 48 "${DISTDIR}"/${PN}.png
-
 	if use doc ; then
 		rm -r docs/autogen || die
 		dohtml -r docs/*
@@ -90,14 +87,8 @@ src_install() {
 
 pkg_preinst() {
 	games_pkg_preinst
-	gnome2_icon_savelist
 }
 
 pkg_postinst() {
 	games_pkg_postinst
-	gnome2_icon_cache_update
-}
-
-pkg_postrm() {
-	gnome2_icon_cache_update
 }
