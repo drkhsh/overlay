@@ -1,6 +1,6 @@
 --- source/src/Makefile	2013-11-10 00:12:11.000000000 +0100
 +++ source/src/Makefile	2017-07-27 20:23:13.255683357 +0200
-@@ -1,29 +1,66 @@
+@@ -1,29 +1,65 @@
 -CXXFLAGS= -O3 -fomit-frame-pointer
 -CXX=clang++	# Use clang++, as g++ optimizations cause crashes...
 +CXXFLAGS ?= -O2 -fomit-frame-pointer
@@ -42,7 +42,6 @@
 -# override CXXFLAGS+= -rdynamic		# clang++ doesn't use this...
 -CLIENT_INCLUDES= $(INCLUDES) -I/usr/include `sdl-config --cflags` -idirafter ../include
 -CLIENT_LIBS= -L../enet/.libs -lenet -L$(USRLIB) -lX11 `sdl-config --libs` -lSDL_image -lz -lGL -lopenal -lvorbisfile -lcurl
-+override CXXFLAGS+= -rdynamic
 +CLIENT_INCLUDES= \
 +		 $(INCLUDES) \
 +		 -I/usr/include \
@@ -79,7 +78,7 @@
  endif
  
  CLIENT_OBJS= \
-@@ -83,12 +120,21 @@
+@@ -83,12 +119,21 @@
  
  CLIENT_PCH= cube.h.gch
  
@@ -104,7 +103,7 @@
  endif
  
  SERVER_OBJS= \
-@@ -155,13 +201,24 @@
+@@ -155,13 +200,24 @@
  server_install: server
  
  else
