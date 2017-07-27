@@ -20,15 +20,13 @@ EGIT_REPO_URI="https://github.com/assaultcube/AC"
 RDEPEND="
 	sys-libs/zlib
 	net-misc/curl
-	!dedicated? (
-		media-libs/libsdl[X,opengl,video]
-		media-libs/libogg
-		media-libs/libvorbis
-		media-libs/openal
-		media-libs/sdl-image[jpeg,png]
-		virtual/opengl
-		x11-libs/libX11
-	)"
+	media-libs/libsdl[X,opengl,video]
+	media-libs/libogg
+	media-libs/libvorbis
+	media-libs/openal
+	media-libs/sdl-image[jpeg,png]
+	virtual/opengl
+	x11-libs/libX11"
 
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
@@ -38,7 +36,6 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-g++.patch
 
 	# remove unsued stuff
-	rm -r bin_win32/* || die
 	find packages -name *.txt -delete || die
 }
 
