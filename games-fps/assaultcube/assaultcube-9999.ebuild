@@ -10,6 +10,7 @@ MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
 EGIT_REPO_URI="git://github.com/assaultcube/AC.git"
+SRC_URI=""
 
 LICENSE="ZLIB"
 SLOT="0"
