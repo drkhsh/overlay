@@ -68,7 +68,7 @@
 +	     $(shell $(PKG_CONFIG) --libs openal) \
 +	     $(shell $(PKG_CONFIG) --libs vorbisfile) \
 +	     $(shell $(PKG_CONFIG) --libs x11) \
-+		 $(shell $(PKG_CONFIG) --cflags libcurl)
++		 $(shell $(PKG_CONFIG) --libs libcurl)
 +
 +ifeq ($(BUNDLED_ENET),YES)
 +CLIENT_LIBS += -L../enet/.libs -lenet
