@@ -36,8 +36,8 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/AssaultCube_v${PV}.source/source
 
 src_prepare() {
-	# check pach
-	epatch "${FILESDIR}"/${PN}-1.1.0.4-QA.patch
+	# patch makefile
+	epatch "${FILESDIR}"/${PN}-${PV}-makefile.patch
 
 	# remove unsued stuff
 	rm -r bin_unix/* || die
