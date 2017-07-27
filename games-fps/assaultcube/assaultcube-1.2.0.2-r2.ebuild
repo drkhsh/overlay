@@ -39,9 +39,6 @@ src_prepare() {
 	# patch makefile
 	epatch "${FILESDIR}"/${PN}-${PV}-makefile.patch
 
-	# remove unsued stuff
-	find packages -name readme.txt -delete || die
-
 	# respect FHS and fix binary name
 	sed -i \
 		-e "/^CUBE_DIR=/d ; 2iCUBE_DIR=$(games_get_libdir)/${PN}" \
