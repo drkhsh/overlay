@@ -1,0 +1,12 @@
+--- source/src/Makefile 2017-07-25 18:24:19.000000000 +0200
++++ source/src/Makefile 2017-07-27 21:48:02.335010800 +0200
+@@ -6,7 +6,7 @@
+ # found to have been caused by the g++ compiler in the past. This seems to have
+ # been fixed now by relaxing the optimization that g++ does, so although we'll
+ # continue using clang++ (just in case), you can use g++ if you prefer.
+-CXX=clang++
++CXX=g++
+
+ # Changing this to ACDEBUG=yes will compile a debug version of AssaultCube.
+ ACDEBUG=no
+
