@@ -1,5 +1,5 @@
---- source/src/Makefile	2013-11-10 00:12:11.000000000 +0100
-+++ source/src/Makefile	2017-07-27 18:58:05.700446705 +0200
+--- src/Makefile	2013-11-10 00:12:11.000000000 +0100
++++ src/Makefile	2017-07-27 20:23:13.255683357 +0200
 @@ -1,29 +1,66 @@
 -CXXFLAGS= -O3 -fomit-frame-pointer
 -CXX=clang++	# Use clang++, as g++ optimizations cause crashes...
@@ -54,6 +54,7 @@
 +		 $(shell $(PKG_CONFIG) --cflags openal) \
 +		 $(shell $(PKG_CONFIG) --cflags vorbisfile) \
 +		 $(shell $(PKG_CONFIG) --cflags x11)
++		 $(shell $(PKG_CONFIG) --cflags curl)
 +
 +ifneq ($(BUNDLED_ENET),YES)
 +CLIENT_INCLUDES += $(shell $(PKG_CONFIG) --cflags libenet)
@@ -67,6 +68,7 @@
 +	     $(shell $(PKG_CONFIG) --libs openal) \
 +	     $(shell $(PKG_CONFIG) --libs vorbisfile) \
 +	     $(shell $(PKG_CONFIG) --libs x11)
++		 $(shell $(PKG_CONFIG) --cflags curl)
 +
 +ifeq ($(BUNDLED_ENET),YES)
 +CLIENT_LIBS += -L../enet/.libs -lenet
@@ -102,7 +104,7 @@
  endif
  
  SERVER_OBJS= \
-@@ -155,13 +199,24 @@
+@@ -155,13 +201,24 @@
  server_install: server
  
  else
