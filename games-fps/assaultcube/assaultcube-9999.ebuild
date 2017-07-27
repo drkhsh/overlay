@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils git-2 games
+inherit eutils git-r3 games
 
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
