@@ -4,18 +4,17 @@
 
 EAPI=5
 
-inherit eutils git-r3 games
+inherit eutils git-2 games
 
 MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
+EGIT_REPO_URI="git://github.com/assaultcube/AC.git"
 
 LICENSE="ZLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
-
-EGIT_REPO_URI="https://github.com/assaultcube/AC"
 
 RDEPEND="
 	sys-libs/zlib
