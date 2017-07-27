@@ -40,7 +40,6 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-${PV}-makefile.patch
 
 	# remove unsued stuff
-	rm -r bin_unix/* || die
 	find packages -name readme.txt -delete || die
 
 	# respect FHS and fix binary name
