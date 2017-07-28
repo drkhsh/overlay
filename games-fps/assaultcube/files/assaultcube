@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/libexec/assaultcube/ac_client "--home=${HOME}/.assaultcube" "--init=${HOME}/.assaultcube/config/init.cfg" "$@"
+(cd /usr/share/assaultcube && exec /usr/libexec/assaultcube/ac_client "--home=${HOME}/.assaultcube" "--init=${HOME}/.assaultcube/config/init.cfg" "$@")
