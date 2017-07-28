@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /usr/games/lib64/assaultcube
+cd /usr/libexec/assaultcube
 ac_client "--home=${HOME}/.assaultcube" "--init=${HOME}/.assaultcube/config/init.cfg" "$@"
