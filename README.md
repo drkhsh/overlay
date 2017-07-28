@@ -11,6 +11,8 @@ everything should be reasonable commented and understandable.
 ```
 ├── app-misc
 │   └── khard
+├── games-fps
+│   └── assaultcube
 └── x11-libs
     └── gtk+
 ```
