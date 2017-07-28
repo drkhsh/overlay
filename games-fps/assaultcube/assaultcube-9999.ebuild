@@ -4,13 +4,11 @@
 
 EAPI=5
 
-inherit eutils git-2 games
+inherit git-r3 eutils
 
-MY_PN="AssaultCube"
 DESCRIPTION="Fast and fun first-person-shooter based on the Cube fps"
 HOMEPAGE="http://assault.cubers.net"
-EGIT_REPO_URI="git://github.com/assaultcube/AC.git"
-SRC_URI=""
+EGIT_REPO_URI="https://github.com/assaultcube/AC"
 
 LICENSE="ZLIB"
 SLOT="0"
@@ -44,20 +42,11 @@ src_compile() {
 }
 
 src_install() {
-	insinto "${GAMES_DATADIR}/${PN}"
-	doins -r config packages
+	dobin ${FILESDIR}/assaultcube
 
-	exeinto "$(games_get_libdir)/${PN}"
+	exeinto "/usr/libexec/${PN}"
 	doexe source/src/ac_client
-	newgamesbin "${FILESDIR}"/${PN} ${PN}
 
-	prepgamesdirs
-}
-
-pkg_preinst() {
-	games_pkg_preinst
-}
-
-pkg_postinst() {
-	games_pkg_postinst
+	insinto "/usr/share/${PN}"
+	doins -r config packages
 }
