@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>me@drkhsh.at</email>
+		<name>aaron marcher</name>
+	</maintainer>
+	<longdescription>
+		AssaultCube is a FREE, multiplayer, first-person shooter game, based on
+		the CUBE engine. 
+	</longdescription>
+</pkgmetadata>
