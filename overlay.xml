@@ -17,6 +17,5 @@
 	<source type="git">https://github.com/drkhsh/overlay</source>
 	<feed>https://git.drkhsh.at/overlay/atom</feed>
 	<feed>http://git2zippk73b5w3m.onion/overlay/atom</feed>
-	<feed>https://github.com/drkhsh/overlay/commits/master.atom</feed>
 </repo>
 </repositories>
