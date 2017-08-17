@@ -14,3 +14,7 @@ Included ebuilds
 │   └── create_ap
 └── x11-libs
     └── gtk+
+
+Patches/Changes
+---------------
+- x11-libs/gtk+: Removed D-Bus dependency by optionalizing ATK-Bridge
