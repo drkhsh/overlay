@@ -3,19 +3,17 @@
 <repositories version="1.0">
 <repo priority="10" status="unofficial">
 	<name>drkhsh-overlay</name>
-	<description>drkhsh's gentoo overlay.</description>
+	<description>drkhsh's Gentoo overlay.</description>
 	<homepage>https://drkhsh.at</homepage>
 	<owner type="person">
 		<email>me@drkhsh.at</email>
-		<name>aaron marcher</name>
+		<name>Aaron Marcher</name>
 	</owner>
 	<source type="git">git://git.drkhsh.at/overlay</source>
-	<source type="git">https://git.drkhsh.at/overlay</source>
 	<source type="git">git://git2zippk73b5w3m.onion/overlay</source>
-	<source type="git">http://git2zippk73b5w3m.onion/overlay</source>
-	<source type="git">git://github.com/drkhsh/overlay</source>
 	<source type="git">https://github.com/drkhsh/overlay</source>
-	<feed>https://git.drkhsh.at/overlay/atom</feed>
-	<feed>http://git2zippk73b5w3m.onion/overlay/atom</feed>
+	<feed>https://git.drkhsh.at/overlay/atom.xml</feed>
+	<feed>http://git2zippk73b5w3m.onion/overlay/atom.xml</feed>
+	<feed>https://github.com/drkhsh/overlay/commits/master.atom</feed>
 </repo>
 </repositories>
