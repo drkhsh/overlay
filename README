@@ -1,14 +1,11 @@
 drkhsh-overlay
 ==============
+drkhsh's Gentoo overlay.
+You are on your own if you use my overlay.
+Everything should be reasonable commented and understandable.
 
-drkhsh's gentoo overlay.
-i do not care about broken things, you are on your own!
-
-everything should be reasonable commented and understandable.
-
-## contents
-
-```
+Included ebuilds
+----------------
 ├── app-misc
 │   └── khard
 ├── games-fps
@@ -17,4 +14,3 @@ everything should be reasonable commented and understandable.
 │   └── create_ap
 └── x11-libs
     └── gtk+
-```
