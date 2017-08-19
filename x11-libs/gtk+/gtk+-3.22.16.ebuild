@@ -17,7 +17,7 @@ REQUIRED_USE="
 	xinerama? ( X )
 "
 
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 ~x86 ~alpha ~arm ~hppa ~la64 ~ppc ~ppc64 ~sparc"
 
 # Upstream wants us to do their job:
 # https://bugzilla.gnome.org/show_bug.cgi?id=768662#c1

@@ -13,7 +13,7 @@ if [[ ${PV} == 99999999 ]] ; then
 	KEYWORDS=""
 else
 	SRC_URI="https://github.com/${PN}/${PN}/archive/${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="amd64 ~x86 ~alpha ~arm ~hppa ~la64 ~ppc ~ppc64 ~sparc"
 fi
 
 DESCRIPTION="Teaching an Old Dog New Tricks"

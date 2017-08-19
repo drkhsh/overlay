@@ -1,7 +1,8 @@
 drkhsh-overlay
 ==============
 drkhsh's Gentoo overlay.
-You are on your own if you use my overlay.
+You are on your own if you use my overlay. Packages are stable for amd64. All
+other architectures are testing if upstream supports it.
 Everything should be reasonable commented and understandable.
 
 Included ebuilds

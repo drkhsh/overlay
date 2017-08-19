@@ -16,7 +16,7 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE="zsh-completion"
 
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 ~x86"
 
 RDEPEND="dev-python/vobject[${PYTHON_USEDEP}]
 	dev-python/configobj[${PYTHON_USEDEP}]
