@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>me@drkhsh.at</email>
+		<name>aaron marcher</name>
+	</maintainer>
+	<longdescription>
+		dwm is a dynamic window manager for X. It manages windows in tiling and
+		floating modes. Either mode can be applied dynamically, optimizing the
+		environment for the application in use and the task performed. This is
+		my personal fork with some things changed and my own config.h.
+	</longdescription>
+</pkgmetadata>
