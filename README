@@ -11,11 +11,21 @@ Included ebuilds
 │   └── khard
 ├── games-fps
 │   └── assaultcube
+├── mail-client
+│   └── neomutt
 ├── net-wireless
 │   └── create_ap
-└── x11-libs
-    └── gtk+
+├── x11-libs
+│   └── gtk+
+├── x11-misc
+│   └── slstatus
+├── x11-terms
+│   └── st
+└── x11-wm
+    └── dwm
 
 Patches/Changes
 ---------------
 - x11-libs/gtk+: Removed D-Bus dependency by optionalizing ATK-Bridge
+- x11-terms/st: My own fork (https://git.drkhsh.at/st)
+- x11-wm/dwm: My own fork (https://git.drkhsh.at/dwm)
