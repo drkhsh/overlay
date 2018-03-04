@@ -23,6 +23,7 @@ RDEPEND="dev-python/vobject[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/atomicwrites[${PYTHON_USEDEP}]
 	dev-python/vdirsyncer[${PYTHON_USEDEP}]
+	dev-python/ruamel-yaml[${PYTHON_USEDEP}]
 	zsh-completion? ( app-shells/zsh )"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
