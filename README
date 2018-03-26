@@ -11,6 +11,8 @@ Included ebuilds
 │   └── todoman
 ├── games-fps
 │   └── assaultcube
+├── media-sound
+│   └── mixxx
 ├── net-wireless
 │   └── create_ap
 ├── x11-libs
@@ -24,6 +26,7 @@ Included ebuilds
 
 Patches/Changes
 ---------------
+- media-sound/mixxx: 2.1 beta with removed D-Bus dependency
 - x11-libs/gtk+: Removed D-Bus dependency by optionalizing ATK-Bridge
 - x11-terms/st: My own fork (https://git.drkhsh.at/st)
 - x11-wm/dwm: My own fork (https://git.drkhsh.at/dwm)
