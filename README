@@ -13,8 +13,6 @@ Included ebuilds
 │   └── assaultcube
 ├── media-sound
 │   └── mixxx
-├── net-wireless
-│   └── create_ap
 ├── x11-libs
 │   └── gtk+
 ├── x11-misc
