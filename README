@@ -17,14 +17,8 @@ Included ebuilds
 │   └── gtk+
 ├── x11-misc
 │   └── slstatus
-├── x11-terms
-│   └── st
-└── x11-wm
-    └── dwm
 
 Patches/Changes
 ---------------
 - media-sound/mixxx: 2.1 beta with removed D-Bus dependency
 - x11-libs/gtk+: Removed D-Bus dependency by optionalizing ATK-Bridge
-- x11-terms/st: My own fork (https://git.drkhsh.at/st)
-- x11-wm/dwm: My own fork (https://git.drkhsh.at/dwm)
