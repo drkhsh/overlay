@@ -8,15 +8,16 @@ Everything should be reasonable commented and understandable.
 Included ebuilds
 ----------------
 ├── app-misc
-│   └── todoman
+│   ├── todoman
+│   └── zzzy
 ├── games-fps
 │   └── assaultcube
 ├── media-sound
 │   └── mixxx
 ├── x11-libs
 │   └── gtk+
-├── x11-misc
-│   └── slstatus
+└─── x11-misc
+    └── slstatus
 
 Patches/Changes
 ---------------
