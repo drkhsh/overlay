@@ -13,10 +13,8 @@ EGIT_BRANCH="2.1"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="aac debug doc ffmpeg hid mp3 mp4 shout wavpack"
+IUSE="aac debug doc ffmpeg hid mp3 opus shout usb wavpack"
 
-# fails to compile system-fidlib. Add ">media-libs/fidlib-0.9.10-r1" once this
-# got fixed
 RDEPEND="
 	dev-db/sqlite
 	dev-libs/protobuf:0=
@@ -39,7 +37,7 @@ RDEPEND="
 	media-libs/taglib
 	media-libs/vamp-plugin-sdk
 	sci-libs/fftw:3.0=
-	virtual/libusb:1
+	usb? ( virtual/libusb:1 )
 	virtual/opengl
 	x11-libs/libX11
 	aac? (
@@ -48,12 +46,10 @@ RDEPEND="
 	)
 	hid? ( dev-libs/hidapi )
 	mp3? ( media-libs/libmad )
-	mp4? ( media-libs/libmp4v2:= )
 	shout? ( media-libs/libshout )
 	wavpack? ( media-sound/wavpack )
 	ffmpeg? ( media-video/ffmpeg:0= )
 "
-# media-libs/rubberband RDEPENDs on sci-libs/fftw:3.0
 DEPEND="
 	${RDEPEND}
 	virtual/pkgconfig
@@ -75,9 +71,6 @@ src_prepare() {
 src_configure() {
 	local myoptimize=0
 
-	# Required for >=qt-5.7.0 (bug #590690)
-	append-cxxflags -std=c++11
-
 	# Try to get cpu type based on CFLAGS.
 	# Bug #591968
 	for i in $(get-flag mcpu) $(get-flag march) ; do
@@ -93,9 +86,9 @@ src_configure() {
 		faad="$(usex aac 1 0)"
 		ffmpeg="$(usex ffmpeg 1 0)"
 		hid="$(usex hid 1 0)"
-		hifieq=1
-		m4a="$(usex mp4 1 0)"
+		bulk="$(usex usb 1 0)"
 		mad="$(usex mp3 1 0)"
+		opus="$(usex opus 1 0)"
 		optimize="${myoptimize}"
 		qdebug="$(usex debug 1 0)"
 		shoutcast="$(usex shout 1 0)"
