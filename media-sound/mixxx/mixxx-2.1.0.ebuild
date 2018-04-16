@@ -7,7 +7,7 @@ inherit flag-o-matic scons-utils toolchain-funcs git-r3
 
 DESCRIPTION="Advanced Digital DJ tool based on Qt"
 HOMEPAGE="https://www.mixxx.org/"
-SRC_URI="https://downloads.${PN}.org/${P}/${P}-src.tar.gz"
+SRC_URI="https://github.com/mixxxdj/mixxx/archive/release-2.1.0.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
