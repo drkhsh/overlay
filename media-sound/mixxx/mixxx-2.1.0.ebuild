@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit flag-o-matic scons-utils toolchain-funcs git-r3
+inherit flag-o-matic scons-utils toolchain-funcs
 
 DESCRIPTION="Advanced Digital DJ tool based on Qt"
 HOMEPAGE="https://www.mixxx.org/"
