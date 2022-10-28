@@ -7,13 +7,13 @@
 	<homepage>https://drkhsh.at</homepage>
 	<owner type="person">
 		<email>me@drkhsh.at</email>
-		<name>Aaron Marcher</name>
+		<name>drkhsh</name>
 	</owner>
 	<source type="git">git://git.drkhsh.at/overlay</source>
-	<source type="git">git://git2zippk73b5w3m.onion/overlay</source>
+	<source type="git">git://drkhsh4siy7k3cbbo5uik744bq73p7jl6psqfwr3evsi3qepixydokyd/overlay</source>
 	<source type="git">https://github.com/drkhsh/overlay</source>
 	<feed>https://git.drkhsh.at/overlay/atom.xml</feed>
-	<feed>http://git2zippk73b5w3m.onion/overlay/atom.xml</feed>
+	<feed>http://drkhsh4siy7k3cbbo5uik744bq73p7jl6psqfwr3evsi3qepixydokyd/overlay/atom.xml</feed>
 	<feed>https://github.com/drkhsh/overlay/commits/master.atom</feed>
 </repo>
 </repositories>
