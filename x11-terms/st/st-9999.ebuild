@@ -8,6 +8,7 @@ inherit desktop savedconfig toolchain-funcs git-r3
 DESCRIPTION="Simple terminal implementation for X (drkhsh fork)"
 HOMEPAGE="https://st.suckless.org/"
 EGIT_REPO_URI="git://git.drkhsh.at/${PN}.git"
+EGIT_BRANCH="drkhsh/qubes"
 
 LICENSE="MIT-with-advertising"
 KEYWORDS="amd64 ~x86"
