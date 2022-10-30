@@ -13,6 +13,7 @@ EGIT_REPO_URI="https://git.drkhsh.at/dwm"
 
 LICENSE="MIT"
 SLOT="0"
+KEYWORDS="amd64 ~x86"
 IUSE="xinerama"
 
 RDEPEND="

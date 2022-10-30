@@ -10,6 +10,7 @@ HOMEPAGE="https://st.suckless.org/"
 EGIT_REPO_URI="https://git.drkhsh.at/${PN}"
 
 LICENSE="MIT-with-advertising"
+KEYWORDS="amd64 ~x86"
 SLOT="0"
 
 RDEPEND="
