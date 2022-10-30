@@ -56,7 +56,8 @@ src_install() {
 
 	dodoc TODO
 
-	make_desktop_entry ${PN} simpleterm utilities-terminal 'System;TerminalEmulator;' ''
+	# applied desktop entry patch
+	#make_desktop_entry ${PN} simpleterm utilities-terminal 'System;TerminalEmulator;' ''
 
 	save_config config.h
 }
