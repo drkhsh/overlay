@@ -19,11 +19,11 @@ RDEPEND="
 	media-libs/harfbuzz
 	x11-libs/libX11
 	x11-libs/libXft
-	~x11-terms/st-terminfo-${PV}
 "
 DEPEND="
 	${RDEPEND}
 	x11-base/xorg-proto
+	media-fonts/fira-code
 "
 BDEPEND="virtual/pkgconfig"
 
@@ -60,11 +60,3 @@ src_install() {
 	save_config config.h
 }
 
-pkg_postinst() {
-	if ! [[ "${REPLACING_VERSIONS}" ]]; then
-		elog "Please ensure a usable font is installed, like"
-		elog "    media-fonts/corefonts"
-		elog "    media-fonts/dejavu"
-		elog "    media-fonts/urw-fonts"
-	fi
-}
