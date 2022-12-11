@@ -9,7 +9,8 @@ DESCRIPTION="a dynamic window manager for X11 (drkhsh fork)"
 HOMEPAGE="https://dwm.suckless.org/"
 
 inherit git-r3
-EGIT_REPO_URI="https://git.drkhsh.at/dwm"
+EGIT_REPO_URI="git://git.drkhsh.at/dwm.git"
+EGIT_BRANCH="drkhsh/pc"
 
 LICENSE="MIT"
 SLOT="0"
@@ -50,12 +51,6 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
-
-	exeinto /etc/X11/Sessions
-	newexe "${FILESDIR}"/dwm-session2 dwm
-
-	insinto /usr/share/xsessions
-	doins "${FILESDIR}"/dwm.desktop
 
 	dodoc README
 
