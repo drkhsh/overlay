@@ -26,7 +26,7 @@ DEPEND="${RDEPEND}
 BDEPEND="virtual/pkgconfig"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-4.9-gentoo.patch
+	"${FILESDIR}"/${PN}-gentoo.patch
 )
 
 src_prepare() {
