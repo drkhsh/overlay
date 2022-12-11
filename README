@@ -14,9 +14,12 @@ Included ebuilds
 ├─── x11-wm
 │   └── dwm
 └─── x11-misc
-    └── slstatus
+    ├── slstatus
+    └── dmenu
 
 Patches/Changes
 ---------------
-- x11-terms/st: my fork
-- x11-wm/dwm: my fork
+my fork:
+- x11-terms/st
+- x11-wm/dwm
+- x11-misc/dmenu
