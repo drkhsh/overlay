@@ -15,6 +15,7 @@ Included ebuilds
 │   └── dwm
 └─── x11-misc
     ├── slstatus
+    ├── slock
     └── dmenu
 
 Patches/Changes
@@ -23,3 +24,4 @@ my fork:
 - x11-terms/st
 - x11-wm/dwm
 - x11-misc/dmenu
+- x11-misc/slock
