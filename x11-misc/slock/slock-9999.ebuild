@@ -12,7 +12,7 @@ EGIT_BRANCH="drkhsh/master"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~hppa ~ppc64 ~x86"
+KEYWORDS="amd64 ~x86"
 
 RDEPEND="
 	virtual/libcrypt:=
