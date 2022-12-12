@@ -25,10 +25,6 @@ DEPEND="
 	x11-base/xorg-proto
 "
 
-PATCHES=(
-	"${FILESDIR}"/slock-1.4-fix-link-paths.patch
-)
-
 src_prepare() {
 	default
 
