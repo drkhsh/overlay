@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit fcaps savedconfig toolchain-funcs
+inherit git-r3 fcaps savedconfig toolchain-funcs
 
 DESCRIPTION="simple X display locker"
 HOMEPAGE="https://tools.suckless.org/slock"
