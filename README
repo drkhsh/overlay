@@ -7,6 +7,8 @@ Everything should be reasonable commented and understandable.
 
 Included ebuilds
 ----------------
+├── app-misc
+│   └── cmatrix
 ├── games-fps
 │   └── assaultcube
 ├─── x11-terms
@@ -25,3 +27,6 @@ my fork:
 - x11-wm/dwm
 - x11-misc/dmenu
 - x11-misc/slock
+
+fixes:
+- app-misc/cmatrix
