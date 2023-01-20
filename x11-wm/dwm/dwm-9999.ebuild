@@ -10,7 +10,7 @@ HOMEPAGE="https://dwm.suckless.org/"
 
 inherit git-r3
 EGIT_REPO_URI="git://git.drkhsh.at/dwm.git"
-EGIT_BRANCH="drkhsh/next"
+EGIT_BRANCH="master"
 
 LICENSE="MIT"
 SLOT="0"
