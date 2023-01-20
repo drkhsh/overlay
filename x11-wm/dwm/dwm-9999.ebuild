@@ -52,7 +52,7 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
 
-	dodoc README
+	dodoc README.md
 
 	save_config config.h
 }
