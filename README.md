@@ -22,8 +22,6 @@ Everything should be reasonable commented and understandable.
 Included ebuilds
 ----------------
 ```
-├── app-misc
-│   └── cmatrix
 ├── games-fps
 │   └── assaultcube
 ├─── x11-terms
@@ -46,3 +44,7 @@ my fork:
 
 fixes:
 - app-misc/cmatrix
+
+# License
+
+CC0 etc blabla
