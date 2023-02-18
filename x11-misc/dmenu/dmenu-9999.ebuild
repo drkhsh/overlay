@@ -7,7 +7,7 @@ inherit git-r3 savedconfig toolchain-funcs
 DESCRIPTION="a generic, highly customizable, and efficient menu for X (drkhsh fork)"
 HOMEPAGE="https://tools.suckless.org/dmenu/"
 EGIT_REPO_URI="git://git.drkhsh.at/dmenu.git"
-EGIT_BRANCH="drkhsh/master"
+EGIT_BRANCH="master"
 
 LICENSE="MIT"
 SLOT="0"
