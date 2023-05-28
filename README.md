@@ -22,6 +22,8 @@ Everything should be reasonable commented and understandable.
 Included ebuilds
 ----------------
 ```
+├── dev-python
+│   └── py-sonic
 ├── games-fps
 │   └── assaultcube
 ├─── x11-terms
