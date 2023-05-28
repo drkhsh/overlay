@@ -27,6 +27,7 @@ Included ebuilds
 ├── games-fps
 │   └── assaultcube
 ├── media-sound
+│   ├── mopidy-mpd
 │   └── mopidy-subidy
 ├─── x11-terms
 │   └── st
