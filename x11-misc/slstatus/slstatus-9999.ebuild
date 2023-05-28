@@ -6,7 +6,7 @@ inherit git-r3 savedconfig toolchain-funcs
 
 DESCRIPTION="a suckless status monitor for window managers that use WM_NAME (e.g. dwm) or stdin to fill the status bar. "
 HOMEPAGE="https://git.drkhsh.at/slstatus"
-EGIT_REPO_URI="git://git.drkhsh.at/slstatus"
+EGIT_REPO_URI="https://git.drkhsh.at/slstatus"
 
 LICENSE="ISC"
 SLOT="0"

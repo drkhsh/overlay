@@ -9,7 +9,7 @@ DESCRIPTION="a dynamic window manager for X11 (drkhsh fork)"
 HOMEPAGE="https://dwm.suckless.org/"
 
 inherit git-r3
-EGIT_REPO_URI="git://git.drkhsh.at/dwm.git"
+EGIT_REPO_URI="https://git.drkhsh.at/dwm.git"
 EGIT_BRANCH="master"
 
 LICENSE="MIT"

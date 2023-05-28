@@ -7,7 +7,7 @@ inherit git-r3 fcaps savedconfig toolchain-funcs
 
 DESCRIPTION="simple X display locker"
 HOMEPAGE="https://tools.suckless.org/slock"
-EGIT_REPO_URI="git://git.drkhsh.at/slock.git"
+EGIT_REPO_URI="https://git.drkhsh.at/slock.git"
 EGIT_BRANCH="master"
 
 LICENSE="MIT"
