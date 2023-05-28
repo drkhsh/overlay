@@ -26,6 +26,8 @@ Included ebuilds
 │   └── py-sonic
 ├── games-fps
 │   └── assaultcube
+├── media-sound
+│   └── mopidy-subidy
 ├─── x11-terms
 │   └── st
 ├─── x11-wm
