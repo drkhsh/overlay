@@ -1,8 +1,14 @@
-From 3c494e2289c93ab6262409f9498866bdfd57bcf4 Mon Sep 17 00:00:00 2001
+From 103bcbaf093899a1960501f49d1c92b98dda278e Mon Sep 17 00:00:00 2001
 From: Georgy Yakovlev <gyakovlev@gentoo.org>
 Date: Fri, 7 Oct 2022 11:29:04 -0700
 Subject: [PATCH] gentoo patch
 
+---
+ config.mk | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/config.mk b/config.mk
+index a2bcfa4..78c3725 100644
 --- a/config.mk
 +++ b/config.mk
 @@ -20,13 +20,13 @@ FREETYPEINC = /usr/include/freetype2
@@ -10,9 +16,9 @@ Subject: [PATCH] gentoo patch
  
  # includes and libs
 -INCS = -I$(X11INC) -I$(FREETYPEINC)
--LIBS = -L$(X11LIB) -lX11 $(XINERAMALIBS) $(FREETYPELIBS)
+-LIBS = -L$(X11LIB) -lX11 -lXrender $(XINERAMALIBS) $(FREETYPELIBS)
 +INCS = $(X11INC) $(FREETYPEINC)
-+LIBS = $(X11LIB) $(XINERAMALIBS) $(FREETYPELIBS) -lXrender
++LIBS = $(X11LIB) -lXrender $(XINERAMALIBS) $(FREETYPELIBS)
  
  # flags
 -CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"$(VERSION)\" $(XINERAMAFLAGS)
@@ -24,3 +30,6 @@ Subject: [PATCH] gentoo patch
  
  # compiler and linker
  CC = cc
+-- 
+2.43.0
+
