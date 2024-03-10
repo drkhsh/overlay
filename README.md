@@ -22,6 +22,8 @@ Everything should be reasonable commented and understandable.
 Included ebuilds
 ----------------
 ```
+├── app-backup
+│   └── proxmox-backup-client
 ├── dev-python
 │   └── py-sonic
 ├── games-fps
