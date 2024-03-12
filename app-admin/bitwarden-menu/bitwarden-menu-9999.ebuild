@@ -4,11 +4,10 @@
 EAPI=8
 
 DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..12} pypy3 )
 
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
-
-DISTUTILS_USE_PEP517=yes
 
 DESCRIPTION="A python library to wrap the Subsonic REST API."
 HOMEPAGE="https://github.com/firecat53/bitwarden-menu"
