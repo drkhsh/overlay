@@ -35,6 +35,8 @@ Included ebuilds
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
+├── sys-kernel
+│   └── gentoo-sources-6.6.6
 ├─── x11-terms
 │   └── st
 ├─── x11-wm
