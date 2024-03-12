@@ -22,7 +22,7 @@ RDEPEND="
 	x11-misc/dmenu
 	x11-misc/xdotool
 	x11-misc/xsel
-	dev-python/py-pynput
+	dev-python/pynput
 	app-admin/bitwarden-cli-bin
 "
 
