@@ -8,6 +8,8 @@ PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1
 
+DISTUTILS_USE_PEP517=yes
+
 DESCRIPTION="A python library to wrap the Subsonic REST API."
 HOMEPAGE="https://github.com/firecat53/bitwarden-menu"
 SRC_URI="https://github.com/firecat53/bitwarden-menu/archive/main.zip -> ${P}.zip"
