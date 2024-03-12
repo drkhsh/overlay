@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 LICENSE="BSD"
 SLOT="0"
 
-S="${WORKDIR}/${PN}-master"
+S="${WORKDIR}/pynput-master"
 
 RDEPEND="
 "
