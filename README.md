@@ -22,9 +22,12 @@ Everything should be reasonable commented and understandable.
 Included ebuilds
 ----------------
 ```
+├── app-admin
+│   └── bitwarden-menu
 ├── app-backup
 │   └── proxmox-backup-client
 ├── dev-python
+│   ├── py-pynput
 │   └── py-sonic
 ├── games-fps
 │   └── assaultcube
