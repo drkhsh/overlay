@@ -10,13 +10,13 @@ inherit distutils-r1
 
 DESCRIPTION="A python library to wrap the Subsonic REST API."
 HOMEPAGE="https://github.com/firecat53/bitwarden-menu"
-SRC_URI="https://github.com/firecat53/bitwarden-menu/archive/master.zip -> ${P}.zip"
+SRC_URI="https://github.com/firecat53/bitwarden-menu/archive/main.zip -> ${P}.zip"
 
 KEYWORDS="~amd64"
 LICENSE="BSD"
 SLOT="0"
 
-S="${WORKDIR}/${PN}-master"
+S="${WORKDIR}/${PN}-main"
 
 RDEPEND="
 	x11-misc/dmenu
