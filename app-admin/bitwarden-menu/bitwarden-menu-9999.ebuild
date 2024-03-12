@@ -29,4 +29,8 @@ DEPEND="
 	${RDEPEND}
 "
 
+BDEPEND="
+	dev-python/hatch-vcs[${PYTHON_USEDEP}]
+"
+
 distutils_enable_tests pytest
