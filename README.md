@@ -26,6 +26,8 @@ Included ebuilds
 │   └── bitwarden-menu
 ├── app-backup
 │   └── proxmox-backup-client
+├── app-text
+│   └── urlscan
 ├── dev-python
 │   ├── py-pynput
 │   └── py-sonic
