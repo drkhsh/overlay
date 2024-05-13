@@ -23,7 +23,8 @@ Included ebuilds
 ----------------
 ```
 ├── app-admin
-│   └── bitwarden-menu
+│   ├── bitwarden-menu
+│   └── sops
 ├── app-backup
 │   └── proxmox-backup-client
 ├── app-text
