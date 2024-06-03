@@ -22,6 +22,7 @@ RDEPEND="
 	x11-libs/libX11
 	>=x11-libs/libXft-2.3.5
 	xinerama? ( x11-libs/libXinerama )
+	media-libs/freetype
 "
 DEPEND="
 	${RDEPEND}
