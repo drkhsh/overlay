@@ -435,7 +435,7 @@ go-module_set_globals
 
 DESCRIPTION="Simple and flexible tool for managing secrets"
 HOMEPAGE="https://github.com/getsops/sops"
-SRC_URI="https://github.com/getsops/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/getsops/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="MPL-2.0"
