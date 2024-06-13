@@ -1,7 +1,7 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 inherit git-r3 savedconfig toolchain-funcs
 
 DESCRIPTION="a suckless status monitor for window managers that use WM_NAME (e.g. dwm) or stdin to fill the status bar. "
