@@ -434,8 +434,8 @@ EGO_SUM=(
 go-module_set_globals
 
 DESCRIPTION="Simple and flexible tool for managing secrets"
-HOMEPAGE="https://github.com/mozilla/sops"
-SRC_URI="https://github.com/mozilla/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+HOMEPAGE="https://github.com/getsops/sops"
+SRC_URI="https://github.com/getsops/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="MPL-2.0"
