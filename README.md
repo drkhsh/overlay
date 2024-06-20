@@ -38,6 +38,8 @@ Included ebuilds
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
+├── media-video
+│   └── jellyfin-media-player
 ├── sys-kernel
 │   └── gentoo-sources-6.6.6
 ├─── x11-terms
