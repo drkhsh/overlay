@@ -11,8 +11,8 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-RDEPEND="sys-apps/systemd"
-DEPEND="${RDEPEND} virtual/rust"
+RDEPEND="sys-apps/systemd gui-libs/gtk gui-libs/gtk-layer-shell dev-libs/libinput"
+DEPEND="${RDEPEND} virtual/rust dev-lang/sassc"
 
 S="${WORKDIR}/${P/_/-}"
 
