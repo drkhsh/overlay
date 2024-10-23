@@ -1,0 +1,12 @@
+<pkgmetadata>
+<maintainer type="person">
+<email>me@drkhsh.at</email>
+<name>drkhsh</name>
+</maintainer>
+<longdescription lang="en">
+A GTK based on screen display for keyboard shortcuts like caps-lock and volume.
+</longdescription>
+<upstream>
+<remote-id type="github">ErikReider/SwayOSD</remote-id>
+</upstream>
+</pkgmetadata>
