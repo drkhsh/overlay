@@ -24,32 +24,47 @@ Included ebuilds
 ```
 ├── app-admin
 │   ├── bitwarden-menu
-│   └── sops
+│   ├── sops
+│   │   └── files
+│   └── ws3
 ├── app-backup
 │   └── proxmox-backup-client
+│       └── files
 ├── app-text
 │   └── urlscan
 ├── dev-python
-│   ├── py-pynput
+│   ├── pynput
 │   └── py-sonic
 ├── games-fps
 │   └── assaultcube
+│       └── files
+├── gui-apps
+│   └── swayosd
+│       └── files
 ├── media-sound
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
-├── media-video
-│   └── jellyfin-media-player
-├── sys-kernel
-│   └── gentoo-sources-6.6.6
-├─── x11-terms
+├── metadata
+│   └── md5-cache
+│       ├── x11-misc
+│       ├── x11-terms
+│       └── x11-wm
+├── net-im
+│   └── gurk
+├── profiles
+│   └── systemd-hardened
+├── sys-auth
+│   └── yubikey-touch-detector
+├── x11-misc
+│   ├── dmenu
+│   │   └── files
+│   ├── slock
+│   └── slstatus
+├── x11-terms
 │   └── st
-├─── x11-wm
-│   └── dwm
-└─── x11-misc
-    ├── slstatus
-    ├── slock
-    └── dmenu
+└── x11-wm
+    └── dwm
 ```
 
 Patches/Changes
@@ -59,9 +74,6 @@ my fork:
 - x11-wm/dwm
 - x11-misc/dmenu
 - x11-misc/slock
-
-fixes:
-- app-misc/cmatrix
 
 # License
 
