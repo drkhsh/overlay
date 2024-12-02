@@ -50,8 +50,6 @@ Included ebuilds
 │       ├── x11-misc
 │       ├── x11-terms
 │       └── x11-wm
-├── net-im
-│   └── gurk
 ├── profiles
 │   └── systemd-hardened
 ├── sys-auth
