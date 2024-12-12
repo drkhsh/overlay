@@ -25,11 +25,11 @@ Included ebuilds
 ├── app-admin
 │   ├── bitwarden-menu
 │   ├── sops
-│   │   └── files
 │   └── ws3
 ├── app-backup
 │   └── proxmox-backup-client
-│       └── files
+├── app-misc
+│   └── spicetify-cli
 ├── app-text
 │   └── urlscan
 ├── dev-python
@@ -37,26 +37,18 @@ Included ebuilds
 │   └── py-sonic
 ├── games-fps
 │   └── assaultcube
-│       └── files
 ├── gui-apps
 │   └── swayosd
-│       └── files
 ├── media-sound
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
-├── metadata
-│   └── md5-cache
-│       ├── x11-misc
-│       ├── x11-terms
-│       └── x11-wm
 ├── profiles
 │   └── systemd-hardened
 ├── sys-auth
 │   └── yubikey-touch-detector
 ├── x11-misc
 │   ├── dmenu
-│   │   └── files
 │   ├── slock
 │   └── slstatus
 ├── x11-terms
