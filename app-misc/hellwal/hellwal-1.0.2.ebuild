@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit git-r3 savedconfig toolchain-funcs
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="Pywal-like color palette generator, but faster and in C "
 HOMEPAGE="https://github.com/danihek/hellwal"
 EGIT_REPO_URI="https://github.com/danihek/hellwal.git"
-EGIT_BRANCH="master"
+EGIT_BRANCH="main"
 
 LICENSE="MIT"
 SLOT="0"
