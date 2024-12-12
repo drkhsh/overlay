@@ -1,0 +1,10 @@
+<pkgmetadata>
+<maintainer type="person">
+<email>me@drkhsh.at</email>
+<name>drkhsh</name>
+</maintainer>
+<upstream>
+<remote-id type="github">spicetify/cli</remote-id>
+<doc>https://spicetify.app/docs/getting-started/</doc>
+</upstream>
+</pkgmetadata>
