@@ -29,6 +29,7 @@ Included ebuilds
 ├── app-backup
 │   └── proxmox-backup-client
 ├── app-misc
+│   ├── hellwal
 │   └── spicetify-cli
 ├── app-text
 │   └── urlscan
