@@ -30,5 +30,5 @@ src_unpack(){
     unpack_deb ${A}
 }
 src_install(){
-	dobin usr/local/bin/${MY_PN}
+	dobin usr/bin/${MY_PN}
 }
