@@ -24,6 +24,7 @@ Included ebuilds
 ```
 ├── app-admin
 │   ├── bitwarden-menu
+│   ├── loki
 │   ├── sops-bin
 │   └── ws3
 ├── app-backup
@@ -52,8 +53,6 @@ Included ebuilds
 ├── net-p2p
 │   ├── flood-bin
 │   └── rtorrent
-├── profiles
-│   └── systemd-hardened
 ├── sys-auth
 │   └── yubikey-touch-detector
 ├── x11-misc
