@@ -23,6 +23,6 @@ BDEPEND=""
 S="${WORKDIR}"
 
 src_install(){
-	mv flood-linux-x64 flood
+	cp ${DISTDIR}/flood-linux-x64 flood
 	dobin flood
 }
