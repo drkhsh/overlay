@@ -24,7 +24,7 @@ Included ebuilds
 ```
 ├── app-admin
 │   ├── bitwarden-menu
-│   ├── sops
+│   ├── sops-bin
 │   └── ws3
 ├── app-backup
 │   └── proxmox-backup-client
@@ -34,6 +34,7 @@ Included ebuilds
 ├── app-text
 │   └── urlscan
 ├── dev-python
+│   ├── cheetah3
 │   ├── pynput
 │   └── py-sonic
 ├── games-fps
@@ -44,6 +45,12 @@ Included ebuilds
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
+├── net-libs
+│   └── libtorrrent
+├── net-nntp
+│   └── sabnzbd
+├── net-p2p
+│   └── rtorrent
 ├── profiles
 │   └── systemd-hardened
 ├── sys-auth
