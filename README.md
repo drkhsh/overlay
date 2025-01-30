@@ -48,6 +48,8 @@ Included ebuilds
 │   └── mopidy-subidy
 ├── net-libs
 │   └── libtorrrent
+├── net-misc
+│   └── sacc
 ├── net-nntp
 │   └── sabnzbd
 ├── net-p2p
