@@ -11,6 +11,7 @@ inherit git-r3
 DESCRIPTION="dwm for Wayland"
 HOMEPAGE="https://codeberg.org/dwl/dwl"
 
+KEYWORDS="~amd64"
 LICENSE="CC0-1.0 GPL-3+ MIT"
 SLOT="0"
 IUSE="X"
