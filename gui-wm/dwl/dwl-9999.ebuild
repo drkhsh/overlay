@@ -16,13 +16,9 @@ LICENSE="CC0-1.0 GPL-3+ MIT"
 SLOT="0"
 IUSE="X"
 
-if [[ ${PV} == 9999 ]]; then
-	COMMON_DEPEND="~gui-libs/wlroots-9999:=[libinput,session,X?]"
-else
-	COMMON_DEPEND="
-		>=gui-libs/wlroots-0.19:=[libinput,session,X?]
-		<gui-libs/wlroots-0.20:="
-fi
+COMMON_DEPEND="
+	>=gui-libs/wlroots-0.19:=[libinput,session,X?]
+	<gui-libs/wlroots-0.20:="
 
 COMMON_DEPEND+="
 	dev-libs/libinput:=
