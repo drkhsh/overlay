@@ -17,7 +17,7 @@ SLOT="0"
 IUSE="X"
 
 COMMON_DEPEND="
-	>=gui-libs/wlroots-0.19:=[libinput,session,X?]
+	>=gui-libs/wlroots-0.18:=[libinput,session,X?]
 	<gui-libs/wlroots-0.20:="
 
 COMMON_DEPEND+="
