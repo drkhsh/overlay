@@ -9,7 +9,7 @@ DESCRIPTION="Highly customizable Wayland bar for Sway and Wlroots based composit
 HOMEPAGE="https://github.com/Alexays/Waybar"
 
 inherit git-r3
-EGIT_REPO_URI="https://git.drkhsh.at/${PN^}.git"
+EGIT_REPO_URI="https://git.drkhsh.at/waybar.git"
 
 LICENSE="MIT"
 SLOT="0"
