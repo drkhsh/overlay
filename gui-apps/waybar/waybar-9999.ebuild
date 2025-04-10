@@ -17,6 +17,7 @@ IUSE="evdev experimental jack +libinput +logind mpd mpris network pipewire pulse
 REQUIRED_USE="
 	upower? ( logind )
 "
+KEYWORDS="~amd64"
 
 RESTRICT="!test? ( test )"
 
