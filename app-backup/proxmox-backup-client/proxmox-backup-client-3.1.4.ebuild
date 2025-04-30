@@ -286,7 +286,7 @@ LICENSE="0BSD AGPL-3 AGPL-3+ Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD Boos
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND=""
+DEPEND="sys-fs/fuse"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
