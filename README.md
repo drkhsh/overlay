@@ -41,7 +41,9 @@ Included ebuilds
 ├── games-fps
 │   └── assaultcube
 ├── gui-apps
-│   └── swayosd
+│   ├── swayosd
+│   ├── waybar
+│   └── widle
 ├── media-sound
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
@@ -70,6 +72,7 @@ Included ebuilds
 Patches/Changes
 ---------------
 my fork:
+- gui-apps/waybar
 - x11-terms/st
 - x11-wm/dwm
 - x11-misc/dmenu
