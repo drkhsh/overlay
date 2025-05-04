@@ -41,6 +41,7 @@ Included ebuilds
 ├── games-fps
 │   └── assaultcube
 ├── gui-apps
+│   ├── dpms-off
 │   ├── swayosd
 │   ├── waybar
 │   └── widle
