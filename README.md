@@ -52,6 +52,7 @@ Included ebuilds
 ├── net-libs
 │   └── libtorrrent
 ├── net-misc
+│   ├── drawterm
 │   └── sacc
 ├── net-nntp
 │   └── sabnzbd
