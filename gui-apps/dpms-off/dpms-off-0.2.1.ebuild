@@ -57,9 +57,6 @@ CRATES="
 
 inherit cargo git-r3
 
-EGIT_REPO_URI="https://github.com/lilydjwg/dpms-off"
-EGIT_COMMIT="17c5600fdfcf3f5aeb7c85b649dc53e18565b21f"
-
 DESCRIPTION="Turn off monitors to save power (for Wayland) "
 HOMEPAGE="https://github.com/lilydjwg/dpms-off"
 SRC_URI="
@@ -71,3 +68,11 @@ LICENSE="BSD"
 LICENSE+=" MIT Unicode-3.0"
 SLOT="0"
 KEYWORDS="~amd64"
+
+src_unpack() {
+	EGIT_REPO_URI="https://github.com/lilydjwg/dpms-off"
+	EGIT_COMMIT="17c5600fdfcf3f5aeb7c85b649dc53e18565b21f"
+	git-r3_src_unpack
+	cargo_src_unpack
+}
+
