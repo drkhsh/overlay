@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit git-r3 savedconfig toolchain-funcs
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="9front fork of drawterm"
 HOMEPAGE="http://drawterm.9front.org/"
