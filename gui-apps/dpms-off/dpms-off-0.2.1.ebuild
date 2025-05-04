@@ -55,7 +55,10 @@ CRATES="
 	windows_x86_64_msvc@0.52.6
 "
 
-inherit cargo
+inherit cargo git-r3
+
+EGIT_REPO_URI="https://github.com/lilydjwg/dpms-off"
+EGIT_COMMIT="17c5600fdfcf3f5aeb7c85b649dc53e18565b21f"
 
 DESCRIPTION="Turn off monitors to save power (for Wayland) "
 HOMEPAGE="https://github.com/lilydjwg/dpms-off"
