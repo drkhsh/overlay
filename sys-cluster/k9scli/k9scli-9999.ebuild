@@ -9,8 +9,8 @@ GIT_COMMIT=e4e3816
 
 DESCRIPTION="terminal based UI to manage kubernetes clusters"
 HOMEPAGE="https://k9scli.io"
-SRC_URI="https://github.com/derailed/k9s/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/k9s-${PV}"
+SRC_URI="https://github.com/derailed/k9s/archive/refs/tags/v0.50.4.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/k9s-0.50.4"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -30,7 +30,7 @@ src_prepare() {
 }
 
 src_compile() {
-	emake GIT_REV=${GIT_COMMIT} VERSION=v${PV} build
+	emake GIT_REV=${GIT_COMMIT} VERSION=v0.50.4 build
 }
 
 src_install() {
