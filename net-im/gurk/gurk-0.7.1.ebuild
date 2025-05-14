@@ -623,3 +623,7 @@ src_prepare() {
 	sed -i -e "/^\[patch/,\$s@^\(\"curve25519-dalek\" = \).*@\1 { path = \"${WORKDIR}/curve25519-dalek-${COMMIT}/\" }@" Cargo.toml || die
 	default
 }
+
+src_configure() {
+	cargo_src_configure --frozen
+}
