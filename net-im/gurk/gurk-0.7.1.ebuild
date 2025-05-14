@@ -617,3 +617,7 @@ src_unpack() {
 	git-r3_src_unpack
 	cargo_src_unpack
 }
+
+src_configure() {
+	cargo_src_configure --frozen
+}
