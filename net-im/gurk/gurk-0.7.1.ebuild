@@ -609,3 +609,11 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+
+src_unpack() {
+	EGIT_REPO_URI="https://github.com/boxdot/gurk-rs"
+	EGIT_COMMIT="60c350fd8aadbd5ee55b6e03314fe951c43d2849"
+	EGIT_CHECKOUT_DIR=${WORKDIR}/${P}
+	git-r3_src_unpack
+	cargo_src_unpack
+}
