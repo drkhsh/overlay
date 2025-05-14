@@ -49,6 +49,8 @@ Included ebuilds
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
+├── net-im
+│   └── gurk
 ├── net-libs
 │   └── libtorrrent
 ├── net-misc
