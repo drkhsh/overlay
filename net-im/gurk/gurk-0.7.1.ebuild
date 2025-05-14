@@ -593,7 +593,7 @@ declare -A GIT_CRATES=(
 	[zkgroup]='https://github.com/signalapp/libsignal;e46841ea2c1ad03bc5113eba267ac1543689d031;libsignal-%commit%/rust/zkgroup'
 )
 
-inherit cargo
+inherit cargo git-r3
 
 DESCRIPTION="Signal messenger client for terminal"
 HOMEPAGE="https://github.com/boxdot/gurk-rs"
