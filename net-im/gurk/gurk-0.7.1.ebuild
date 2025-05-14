@@ -620,10 +620,6 @@ src_unpack() {
 
 src_prepare() {
 	local COMMIT="7c6d34756355a3566a704da84dce7b1c039a6572"
-	sed -i -e "/^\[patch/,\$s@^\(\"curve25519-dalek\" = \).*@\1 { path = \"${WORKDIR}/curve25519-dalek-${COMMIT}/\" }@" Cargo.toml || die
+	sed -i -e "/^\[patch/,\$s@^\(\"curve25519-dalek\" = \).*@\1 { path = \"${WORKDIR}/curve25519-dalek-${COMMIT}/curve25519-dalek\" }@" Cargo.toml || die
 	default
-}
-
-src_configure() {
-	cargo_src_configure --frozen
 }
