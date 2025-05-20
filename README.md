@@ -25,8 +25,7 @@ Included ebuilds
 ├── app-admin
 │   ├── bitwarden-menu
 │   ├── loki
-│   ├── sops-bin
-│   └── ws3
+│   └── sops-bin
 ├── app-backup
 │   └── proxmox-backup-client
 ├── app-misc
