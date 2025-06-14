@@ -41,6 +41,7 @@ Included ebuilds
 │   └── assaultcube
 ├── gui-apps
 │   ├── dpms-off
+│   ├── lswt
 │   ├── swayosd
 │   ├── waybar
 │   └── widle
