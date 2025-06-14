@@ -1,0 +1,14 @@
+<pkgmetadata>
+<maintainer type="person">
+<email>me@drkhsh.at</email>
+<name>drkhsh</name>
+</maintainer>
+<longdescription lang="en">
+wlrctl is a command line utility for miscellaneous wlroots Wayland extensions.
+
+At this time, wlrctl supports the foreign-toplevel-mangement (window/toplevel command), virtual-keyboard (keyboard command), and virtual-pointer (pointer command) protocols.
+</longdescription>
+<upstream>
+<remote-id type="sourcehut">~brocellous/wlrctl</remote-id>
+</upstream>
+</pkgmetadata>

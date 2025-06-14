@@ -44,6 +44,7 @@ Included ebuilds
 │   ├── lswt
 │   ├── swayosd
 │   ├── waybar
+│   ├── wlrctl
 │   └── widle
 ├── media-sound
 │   ├── mopidy-jellyfin
