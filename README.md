@@ -64,6 +64,8 @@ Included ebuilds
 │   └── rtorrent
 ├── sys-auth
 │   └── yubikey-touch-detector
+├── x11-apps
+│   ├── catclock
 ├── x11-misc
 │   ├── dmenu
 │   ├── slock
