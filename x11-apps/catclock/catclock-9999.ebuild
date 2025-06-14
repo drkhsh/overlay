@@ -13,6 +13,10 @@ SLOT="0"
 KEYWORDS="amd64 ~x86"
 IUSE=""
 
+PATCHES=(
+	"${FILESDIR}"/catclock.patch
+)
+
 RDEPEND="x11-libs/libX11
 	x11-libs/libXmu
 	x11-libs/libXrender

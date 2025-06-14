@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index 1355fce..25b22d2 100644
+--- a/Makefile
++++ b/Makefile
+@@ -26,7 +26,7 @@ INCS      = $(LOCALINCS) $(MOTIFINCS)
+ 
+ #DEFINES     = -DHAS_GNU_EMACS
+ CDEBUGFLAGS = -g
+-CFLAGS      = $(DEFINES) $(INCS) $(CDEBUGFLAGS)
++CFLAGS      = $(DEFINES) $(INCS) $(CDEBUGFLAGS) -Wno-incompatible-pointer-types
+ 
+ DESTINATION = /udir/pjs/bin
+ 
