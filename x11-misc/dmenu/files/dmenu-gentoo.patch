@@ -1,4 +1,4 @@
-From 103bcbaf093899a1960501f49d1c92b98dda278e Mon Sep 17 00:00:00 2001
+From 34635fb80903d1abcd0f0c449c504968c8fbcdd6 Mon Sep 17 00:00:00 2001
 From: Georgy Yakovlev <gyakovlev@gentoo.org>
 Date: Fri, 7 Oct 2022 11:29:04 -0700
 Subject: [PATCH] gentoo patch
@@ -8,7 +8,7 @@ Subject: [PATCH] gentoo patch
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/config.mk b/config.mk
-index a2bcfa4..78c3725 100644
+index 64c3b06..ee098cc 100644
 --- a/config.mk
 +++ b/config.mk
 @@ -20,13 +20,13 @@ FREETYPEINC = /usr/include/freetype2
@@ -16,7 +16,7 @@ index a2bcfa4..78c3725 100644
  
  # includes and libs
 -INCS = -I$(X11INC) -I$(FREETYPEINC)
--LIBS = -L$(X11LIB) -lX11 -lXrender $(XINERAMALIBS) $(FREETYPELIBS)
+-LIBS = -L$(X11LIB) -lX11 $(XINERAMALIBS) $(FREETYPELIBS) -lXrender
 +INCS = $(X11INC) $(FREETYPEINC)
 +LIBS = $(X11LIB) -lXrender $(XINERAMALIBS) $(FREETYPELIBS)
  
@@ -31,5 +31,5 @@ index a2bcfa4..78c3725 100644
  # compiler and linker
  CC = cc
 -- 
-2.43.0
+2.49.0
 
