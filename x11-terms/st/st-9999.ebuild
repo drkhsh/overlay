@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop savedconfig toolchain-funcs git-r3
+inherit savedconfig toolchain-funcs git-r3
 
 DESCRIPTION="Simple terminal implementation for X (drkhsh fork)"
 HOMEPAGE="https://st.suckless.org/"
@@ -17,14 +17,14 @@ SLOT="0"
 RDEPEND="
 	>=sys-libs/ncurses-6.0:0=
 	media-libs/fontconfig
-	media-libs/harfbuzz
+	media-libs/imlib2
 	x11-libs/libX11
 	x11-libs/libXft
+	x11-libs/libXrender
 "
 DEPEND="
 	${RDEPEND}
 	x11-base/xorg-proto
-	media-fonts/fira-code
 "
 BDEPEND="virtual/pkgconfig"
 
@@ -56,9 +56,14 @@ src_install() {
 
 	dodoc TODO
 
-	# applied desktop entry patch
-	#make_desktop_entry ${PN} simpleterm utilities-terminal 'System;TerminalEmulator;' ''
-
 	save_config config.h
 }
 
+pkg_postinst() {
+	if [[ -z "${REPLACING_VERSIONS}" ]]; then
+		elog "Please ensure a usable font is installed, like"
+		elog "    media-fonts/corefonts"
+		elog "    media-fonts/dejavu"
+		elog "    media-fonts/urw-fonts"
+	fi
+}
