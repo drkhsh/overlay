@@ -34,6 +34,6 @@ BDEPEND="
 DOCS=( README.md docs/api-documentation.md )
 
 python_install_all() {
-	rm -rf ${S}/tests
 	distutils-r1_python_install_all
+	rm -rf ${D}/usr/lib/python3.11/site-packages/tests
 }
