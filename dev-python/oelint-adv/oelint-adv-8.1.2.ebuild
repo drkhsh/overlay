@@ -37,3 +37,5 @@ BDEPEND="
 "
 
 DOCS=( README.md docs/constants.md docs/template.md )
+
+distutils_enable_tests pytest

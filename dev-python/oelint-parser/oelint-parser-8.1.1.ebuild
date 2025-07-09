@@ -32,3 +32,5 @@ BDEPEND="
 "
 
 DOCS=( README.md docs/api-documentation.md )
+
+distutils_enable_tests pytest
