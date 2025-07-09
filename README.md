@@ -36,7 +36,10 @@ Included ebuilds
 ├── dev-python
 │   ├── cheetah3
 │   ├── pynput
-│   └── py-sonic
+│   ├── py-sonic
+│   ├── oelint-adv
+│   ├── oelint-data
+│   └── oelint-parser
 ├── games-fps
 │   └── assaultcube
 ├── gui-apps
