@@ -33,8 +33,8 @@ BDEPEND="
 
 DOCS=( README.md docs/api-documentation.md )
 
-python_install_all() {
-	rm -rf ${ED}/tests
-	distutils-r1_python_install_all
-	rm -rf ${ED}/tests
+src_prepare() {
+	distutils-r1_src_prepare
+
+	rm -rf tests
 }
