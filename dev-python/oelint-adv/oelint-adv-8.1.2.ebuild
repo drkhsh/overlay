@@ -38,4 +38,8 @@ BDEPEND="
 
 DOCS=( README.md docs/constants.md docs/template.md )
 
-distutils_enable_tests pytest
+src_prepare() {
+	distutils-r1_src_prepare
+
+	rm -rf tests
+}
