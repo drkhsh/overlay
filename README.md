@@ -49,6 +49,8 @@ Included ebuilds
 │   ├── waybar
 │   ├── wlrctl
 │   └── widle
+├── mail-client
+│   └── mblaze
 ├── media-sound
 │   ├── mopidy-jellyfin
 │   ├── mopidy-mpd
