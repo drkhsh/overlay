@@ -30,15 +30,15 @@ src_install() {
 	emake PREFIX="${EPREFIX}/usr" DESTDIR="${D}" install
 	einstalldocs
 
-	dobin contrib/msearch
-	doman contrib/msearch.1
-	rm contrib/msearch{,.1} || die
+	dobin ${S}/contrib/msearch
+	doman ${S}/contrib/msearch.1
+	rm ${S}/contrib/msearch{,.1} || die
 
 	insinto /usr/share/zsh/site-functions/
-	doins contrib/_mblaze
-	rm contrib/_mblaze || die
+	doins ${S}/contrib/_mblaze
+	rm ${S}/contrib/_mblaze || die
 
-	dodoc -r contrib
+	dodoc -r ${S}/contrib
 }
 
 pkg_preinst() {
