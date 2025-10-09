@@ -11,7 +11,7 @@ SRC_URI="https://github.com/phillbush/xmenu/archive/v${PV}.tar.gz -> ${P}.tar.gz
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ~x86"
-IUSE="xinerama"
+IUSE=""
 
 RDEPEND="
 	media-libs/fontconfig
