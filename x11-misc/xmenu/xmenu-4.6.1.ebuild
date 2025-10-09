@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit git-r3 savedconfig toolchain-funcs
+inherit savedconfig toolchain-funcs
 
 DESCRIPTION="a x11 menu utility"
 HOMEPAGE="https://github.com/phillbush/xmenu"
