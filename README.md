@@ -35,11 +35,11 @@ Included ebuilds
 │   └── urlscan
 ├── dev-python
 │   ├── cheetah3
-│   ├── pynput
-│   ├── py-sonic
 │   ├── oelint-adv
 │   ├── oelint-data
-│   └── oelint-parser
+│   ├── oelint-parser
+│   ├── pynput
+│   └── py-sonic
 ├── games-fps
 │   └── assaultcube
 ├── gui-apps
@@ -47,8 +47,11 @@ Included ebuilds
 │   ├── lswt
 │   ├── swayosd
 │   ├── waybar
+│   ├── widle
 │   ├── wlrctl
-│   └── widle
+│   └── wmenu
+├── gui-wm
+│   └── dwl
 ├── mail-client
 │   └── mblaze
 ├── media-sound
@@ -58,10 +61,12 @@ Included ebuilds
 ├── net-im
 │   └── gurk
 ├── net-libs
-│   └── libtorrrent
+│   └── libtorrent
 ├── net-misc
 │   ├── drawterm
-│   └── sacc
+│   ├── localsend-bin
+│   ├── sacc
+│   └── toot
 ├── net-nntp
 │   └── sabnzbd
 ├── net-p2p
@@ -69,12 +74,15 @@ Included ebuilds
 │   └── rtorrent
 ├── sys-auth
 │   └── yubikey-touch-detector
+├── www-client
+│   └── surf
 ├── x11-apps
-│   ├── catclock
+│   └── catclock
 ├── x11-misc
 │   ├── dmenu
 │   ├── slock
-│   └── slstatus
+│   ├── slstatus
+│   └── xmenu
 ├── x11-terms
 │   └── st
 └── x11-wm
@@ -85,10 +93,11 @@ Patches/Changes
 ---------------
 my fork:
 - gui-apps/waybar
-- x11-terms/st
-- x11-wm/dwm
+- gui-wm/dwl
 - x11-misc/dmenu
 - x11-misc/slock
+- x11-terms/st
+- x11-wm/dwm
 
 # License
 
