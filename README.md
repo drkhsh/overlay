@@ -60,7 +60,8 @@ Included ebuilds
 │   ├── mopidy-mpd
 │   └── mopidy-subidy
 ├── net-im
-│   └── gurk
+│   ├── gurk
+│   └── meshchat
 ├── net-libs
 │   └── libtorrent
 ├── net-misc
