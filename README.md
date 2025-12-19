@@ -35,11 +35,13 @@ Included ebuilds
 │   └── urlscan
 ├── dev-python
 │   ├── cheetah3
+│   ├── lxmf
 │   ├── oelint-adv
 │   ├── oelint-data
 │   ├── oelint-parser
 │   ├── pynput
-│   └── py-sonic
+│   ├── py-sonic
+│   └── rns
 ├── games-fps
 │   └── assaultcube
 ├── gui-apps
@@ -48,8 +50,7 @@ Included ebuilds
 │   ├── swayosd
 │   ├── waybar
 │   ├── widle
-│   ├── wlrctl
-│   └── wmenu
+│   └── wlrctl
 ├── gui-wm
 │   └── dwl
 ├── mail-client
@@ -65,8 +66,8 @@ Included ebuilds
 ├── net-misc
 │   ├── drawterm
 │   ├── localsend-bin
-│   ├── sacc
-│   └── toot
+│   ├── nomadnet
+│   └── sacc
 ├── net-nntp
 │   └── sabnzbd
 ├── net-p2p
