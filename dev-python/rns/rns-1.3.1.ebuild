@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit distutils-r1 systemd
+inherit distutils-r1 systemd pypi
 
 DESCRIPTION="Self-configuring, encrypted and resilient mesh networking stack for LoRa, packet radio, WiFi and more"
 HOMEPAGE="https://reticulum.network/ https://github.com/markqvist/Reticulum"
@@ -21,8 +21,6 @@ RDEPEND="
 	>=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
 	>=dev-python/pyserial-3.5[${PYTHON_USEDEP}]
 "
-
-S="${WORKDIR}/Reticulum-${PV}"
 
 distutils_enable_tests pytest
 

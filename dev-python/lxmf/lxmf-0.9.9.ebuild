@@ -19,6 +19,4 @@ RDEPEND="
 	>=dev-python/rns-1.0.1[${PYTHON_USEDEP}]
 "
 
-S="${WORKDIR}/LXMF-${PV}"
-
 distutils_enable_tests pytest
