@@ -17,7 +17,7 @@ KEYWORDS=""
 BDEPEND="
 	dev-build/cmake
 	virtual/pkgconfig
-	dev-lang/rust
+	|| ( dev-lang/rust dev-lang/rust-bin )
 "
 DEPEND="
 	media-libs/alsa-lib
