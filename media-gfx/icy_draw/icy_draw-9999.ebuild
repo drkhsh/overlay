@@ -36,6 +36,9 @@ IUSE="rav1e-asm"
 
 export CARGO_HOME="${WORKDIR}/cargo-home"
 
+# Force libstdc++ instead of libc++ (unrar_sys crate defaults to libc++)
+export CXXSTDLIB="c++"
+
 src_compile() {
 	local feature_arg=""
 	use rav1e-asm && feature_arg="--features rav1e-asm"
