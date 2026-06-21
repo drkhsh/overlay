@@ -35,6 +35,9 @@ RESTRICT="network-sandbox"
 
 export CARGO_HOME="${WORKDIR}/cargo-home"
 
+# Force libstdc++ instead of libc++ (unrar_sys crate defaults to libc++)
+export CXXSTDLIB="c++"
+
 src_compile() {
 	cargo build --release -p icy_term \
 		|| die "cargo build failed"
