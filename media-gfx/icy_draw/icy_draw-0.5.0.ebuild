@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 
 BDEPEND="
 	dev-build/cmake
-	dev-util/nasm
+	dev-lang/nasm
 	virtual/pkgconfig
 	|| ( dev-lang/rust dev-lang/rust-bin )
 "
