@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/drkhsh/RatTERM.git"
 EGIT_COMMIT="87b9bcdd16c1e7fa53684c5d8436a019ef8499ba"
 EGIT_SUBMODULES=( "*" )
 
-LICENSE="Apache-2.0 MIT AGPL-3.0"
+LICENSE="Apache-2.0 MIT AGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
